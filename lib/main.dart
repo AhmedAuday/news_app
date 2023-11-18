@@ -9,8 +9,6 @@ import 'artical_news.dart';
 import 'constants.dart';
 import 'firebase_options.dart';
 import 'list_of_country.dart';
-import 'login_page.dart';
-import 'register_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -59,8 +57,6 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'News App',
       routes: {
-        LoginPage.id: (context) => const LoginPage(),
-        ResgisterPage.id: (context) => const ResgisterPage(),
         HomePage.id: (context) => const HomePage(),
       },
       theme: isSwitched
@@ -72,7 +68,7 @@ class _MyAppState extends State<MyApp> {
               fontFamily: GoogleFonts.poppins().fontFamily,
               brightness: Brightness.dark,
             ),
-      home: const LoginPage(),
+      home: const HomePage(),
     );
   }
 }
